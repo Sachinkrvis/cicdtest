@@ -20,7 +20,7 @@ jobs:
       - run: flutter test
 
   build_appbundle:
-    name: Build Flutter (Android)
+    name: Build Flutter(Android apk)
     needs: [flutter_test]
     runs-on: ubuntu-latest
     steps:
