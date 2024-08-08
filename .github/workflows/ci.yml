@@ -19,7 +19,7 @@ jobs:
       - run: flutter analyze
       - run: flutter test
 
-  build_appbundle:
+  build_apk:
     name: Build Flutter(Android apk)
     needs: [flutter_test]
     runs-on: ubuntu-latest
@@ -33,4 +33,4 @@ jobs:
           channel: "stable"
       - run: flutter pub get
       - run: flutter clean
-      - run: flutter build appbundle
+      - run: flutter build apk

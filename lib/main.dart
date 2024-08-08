@@ -131,11 +131,11 @@ class mypage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("this is test which is going to implement"),
+      body: Center(
+        child: Text("this is text which is center"),
+      )
     );
     throw UnimplementedError();
   }
-
-
 
 }
