@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Counter App',
       theme: ThemeData(
+        // this is new line of text from the master branch
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
