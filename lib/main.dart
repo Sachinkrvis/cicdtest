@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
 
-      title: 'Counter App'
+      title: 'Counter App'.
         // this is where i do mistake after merging the master branch to current branch
       theme: ThemeData(
         // this is new line of text from the master branch
