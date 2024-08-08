@@ -3,6 +3,10 @@ on:
   pull_request:
     branches:
       - master
+  push:
+    branches:
+      - main
+      - master
 jobs:
   flutter_test:
     name: Run flutter test and analyze

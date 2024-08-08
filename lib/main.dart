@@ -132,7 +132,7 @@ class mypage extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("this is text which is center"),
+        child: Text("now again start with another"),
       )
     );
     throw UnimplementedError();
