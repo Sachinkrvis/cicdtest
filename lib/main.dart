@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
       title: 'Counter App',
-        // this is where i do mistake after merging the master branch to current branch
+      // merging through new branch for best practice
       theme: ThemeData(
         // this is new line of text from the master branch
         // This is the theme of your application.
