@@ -12,8 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
 
-      title: 'Counter App'.
-        // this is where i do mistake after merging the master branch to current branch
+      title: 'Counter App',
+      // merging through new branch for best practice
       theme: ThemeData(
         // this is new line of text from the master branch
         // This is the theme of your application.
@@ -111,6 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'You have pushed the button this many times:',
             ),
+            mypage(),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
@@ -125,4 +126,16 @@ class _MyHomePageState extends State<MyHomePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+}
+class mypage extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Text("now again start with another"),
+      )
+    );
+    throw UnimplementedError();
+  }
+
 }
