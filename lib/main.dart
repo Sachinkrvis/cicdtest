@@ -113,7 +113,6 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'You have pushed the button this many times:',
             ),
-            mypage(),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
@@ -128,16 +127,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
-}
-class mypage extends StatelessWidget{
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Text("this is test which is going to implement"),
-    );
-    throw UnimplementedError();
-  }
-
-
-
 }
