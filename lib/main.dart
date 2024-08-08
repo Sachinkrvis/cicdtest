@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
       title: 'Counter App',
-
+      // this is where i fix the master code
       theme: ThemeData(
         // this is new line of text from the master branch
         // This is the theme of your application.
