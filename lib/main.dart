@@ -113,7 +113,6 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'You have pushed the button this many times:',
             ),
-            mypage(),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
@@ -132,12 +131,12 @@ class _MyHomePageState extends State<MyHomePage> {
 class mypage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Text("this is test which is going to implement"),
+    return const Scaffold(
+      body: Center(
+        child: Text("testing the new jobs"),
+      )
     );
     throw UnimplementedError();
   }
-
-
 
 }
