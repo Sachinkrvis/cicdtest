@@ -139,6 +139,6 @@ class mypage extends StatelessWidget {
         body: Center(
       child: Text("testing the new jobs"),
     ))
-    throw UnimplementedError();
+    // here the code which creating the error
   }
 }
