@@ -138,7 +138,7 @@ class mypage extends StatelessWidget {
     return const Scaffold(
         body: Center(
       child: Text("testing the new jobs"),
-    ))
+    ));
     // here the code which creating the error
   }
 }
