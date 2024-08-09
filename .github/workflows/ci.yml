@@ -1,4 +1,4 @@
-name: Flutter Build and Test
+name: Flutter Build
 
 on:
   push:
@@ -30,6 +30,3 @@ jobs:
         with:
           name: app-release.apk
           path: build/app/outputs/flutter-apk/app-release.apk
-
-    # Set up failure conditions
-    if: failure()  # Ensures that failure in the build step prevents merge
