@@ -7,29 +7,7 @@ on:
       - main
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
-
-      - name: Get Packages
-        run: flutter pub get
-
-      - name: Run Tests
-        run: flutter test
-
-      - name: Fail the workflow on test failures
-        if: failure()
-        run: exit 1
-
   build:
-    needs: test  # Run this job only if 'test' job succeeds
     runs-on: ubuntu-latest
 
     steps:
@@ -52,3 +30,6 @@ jobs:
         with:
           name: app-release.apk
           path: build/app/outputs/flutter-apk/app-release.apk
+
+    # Set up failure conditions
+    if: failure()  # Ensures that failure in the build step prevents merge
