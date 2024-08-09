@@ -134,6 +134,8 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+// Class (mypage) having error so it is does not allow to add into master branch
+
 class mypage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
