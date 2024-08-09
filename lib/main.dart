@@ -130,9 +130,9 @@ class _MyHomePageState extends State<MyHomePage> {
 class mypage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
-        child: Text("now again start with another"),
+        child: Text("testing the new jobs"),
       )
     );
     throw UnimplementedError();
