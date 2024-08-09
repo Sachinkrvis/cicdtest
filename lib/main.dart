@@ -138,7 +138,7 @@ class mypage extends StatelessWidget {
     return const Scaffold(
         body: Center(
       child: Text("testing the new jobs"),
-    ));
+    ))
     throw UnimplementedError();
   }
 }
