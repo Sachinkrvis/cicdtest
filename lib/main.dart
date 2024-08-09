@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
       title: 'Counter App',
       // merging through new branch for best practice
       theme: ThemeData(
@@ -108,6 +107,12 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            OutlinedButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => mypage()),);
+                },
+                child: Text("button Pressed")),
             const Text(
               'You have pushed the button this many times:',
             ),
@@ -126,15 +131,14 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-class mypage extends StatelessWidget{
+
+class mypage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Text("testing the new jobs"),
-      )
-    );
+        body: Center(
+      child: Text("testing the new jobs"),
+    ));
     throw UnimplementedError();
   }
-
 }
