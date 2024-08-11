@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
 class mypage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const Scaffol(
+    return const Scaffo(
         body: Center(
       child: Text("testing the new jobs"),
     ));
@@ -148,6 +148,7 @@ class mypage extends StatelessWidget {
     // trial 16 for protecting the branch.(this suppose to not push directly)
     // trial 17 for protecting the branch.(here the reason why 16th trail push directly to the branch because it came form the admin acc)
     // this trial 18 suppose to not add in the code because it is going to contain some error.
-    // now i made change to perform itg
+    // now i made change to perform it
+    // now this is going not going to add into the code.
   }
 }
