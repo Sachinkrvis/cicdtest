@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
 class mypage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const Scaffo(
+    return const Scaffold(
         body: Center(
       child: Text("testing the new jobs"),
     ));
